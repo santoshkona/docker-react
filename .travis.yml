@@ -6,6 +6,7 @@ before_install:
 script:
   - docker run -e CI=true santoshkona/docker-react npm run test -- --coverage
 language: generic
+#Below will be deployed in a AWS container
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
