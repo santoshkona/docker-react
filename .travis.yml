@@ -10,10 +10,10 @@ language: generic
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
-  app: 'docker-react'
-  env: 'Dockerreact-env'
+  app: 'docker-aws'
+  env: 'Dockeraws-env'
   bucket_name: 'elasticbeanstalk-us-east-1-501401444888'
-  bucket_path: 'docker-react'
+  bucket_path: 'docker-aws'
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
